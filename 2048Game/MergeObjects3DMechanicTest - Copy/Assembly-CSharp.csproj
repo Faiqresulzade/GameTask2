@@ -59,8 +59,8 @@
     <Compile Include="Assets\Scripts\InstantiateCube.cs" />
     <Compile Include="Assets\Scripts\CubeController.cs" />
     <Compile Include="Assets\Scripts\GameOverPanel.cs" />
-    <Compile Include="Assets\Scripts\Detector.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Detector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

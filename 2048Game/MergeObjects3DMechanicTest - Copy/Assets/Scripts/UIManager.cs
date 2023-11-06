@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private TMP_Text Score;
-    [SerializeField] private TMP_Text HighScore;
+    [SerializeField] public TMP_Text Score;
 
     private int _score;
 
@@ -17,7 +17,12 @@ public class UIManager : MonoBehaviour
     public void ShowScore()
     {
         Score.text=(++_score).ToString();
+
     }
 
-
+    public void ReTry()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+    }
 }
